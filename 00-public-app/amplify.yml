@@ -4,17 +4,11 @@ applications:
   - appRoot: 00-public-app
     frontend:
       phases:
-        preBuild:
-          commands:
-            - bash ./deploy/amplify/00-pre.sh
         build:
           commands:
-            - bash ./deploy/amplify/01-build.sh
-        postBuild:
-          commands:
-            - bash ./deploy/amplify/02-post.sh
+            - bash ./deploy/amplify/build.sh
       artifacts:
-        baseDirectory: public
+        baseDirectory: ./public
         files:
           - '**/*'
       cache:
