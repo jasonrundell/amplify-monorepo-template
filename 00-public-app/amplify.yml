@@ -6,14 +6,13 @@ applications:
       phases:
         preBuild:
           commands:
-            - pwd
-            - npm run amplify:pre
+            - bash ./deploy/amplify/pre.sh
         build:
           commands:
-            - npm run amplify:build
+            - bash ./deploy/amplify/build.sh
         postBuild:
           commands:
-            - npm run amplify:post
+            - bash ./deploy/amplify/post.sh
       artifacts:
         baseDirectory: public
         files:
