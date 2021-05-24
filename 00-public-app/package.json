@@ -14,9 +14,9 @@
   "scripts": {
     "start": "cross-env PORT=3000 react-scripts start",
     "build": "react-scripts build",
-    "amplify:pre": "bash ./deploy/amplify/pre.sh",
-    "amplify:build": "bash ./deploy/amplify/build.sh",
-    "amplify:post": "bash ./deploy/amplify/post.sh",
+    "amplify:pre": "bash ./deploy/amplify/00-pre.sh",
+    "amplify:build": "bash ./deploy/amplify/01-build.sh",
+    "amplify:post": "bash ./deploy/amplify/02-post.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
