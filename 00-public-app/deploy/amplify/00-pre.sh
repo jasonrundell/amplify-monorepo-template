@@ -1,7 +1,11 @@
 echo "Deploying branch: ${BRANCH}"
-echo "nvm install 16.2.0"
+echo "Getting nvm v0.38.0..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+echo "nvm install 16.2.0..."
 nvm install 16.2.0
-echo "nvm use 16.2.0"
+echo "nvm use 16.2.0..."
 nvm use 16.2.0
 echo "node version:"
 node -v
