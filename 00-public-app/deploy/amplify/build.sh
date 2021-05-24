@@ -14,7 +14,7 @@ node -v
 # echo "yarn version:"
 # yarn -v
 echo "Installing NPM packages for Public App..."
-yarn
+yarn install
 echo "Finished installing NPM packages for Public App."
 echo "Building Public App..."
 yarn run build
