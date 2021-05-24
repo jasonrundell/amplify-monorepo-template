@@ -2,12 +2,9 @@ version: 1
 applications:
   - frontend:
       phases:
-        preBuild:
-          commands:
-            - yarn install
         build:
           commands:
-            - yarn run build
+            - bash ./deploy/amplify/build.sh
       artifacts:
         baseDirectory: public
         files:
