@@ -12,7 +12,7 @@ node -v
 echo "yarn set version 1.22.0"
 yarn set version 1.22.0
 echo "yarn version:"
-yarn --version
+yarn -v
 echo "Installing NPM packages for Public App..."
 yarn
 echo "Finished installing NPM packages for Public App."
