@@ -1,7 +1,8 @@
-import { root } from './index.module.scss'
+import React from 'react'
+// import { root } from './index.module.scss'
 const GlobalMainNavigation = () => {
   return (
-    <nav className={root}>
+    <nav>
       <ul>
         <li>
           <a href="/en/">Home</a>
