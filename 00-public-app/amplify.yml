@@ -1,18 +1,18 @@
 version: 1
-
 applications:
-  - appRoot: 00-public-app
-    frontend:
+  - frontend:
       phases:
+        preBuild:
+          commands:
+            - yarn install
         build:
           commands:
             - yarn run build
       artifacts:
-        baseDirectory: ./public
+        baseDirectory: build
         files:
           - '**/*'
       cache:
         paths:
           - node_modules/**/*
-          - .cache/**/*
-          - public/static/**/*
+    appRoot: 00-public-app
