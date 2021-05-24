@@ -6,13 +6,13 @@ applications:
       phases:
         preBuild:
           commands:
-            - bash /deploy/amplify/pre.sh
+            - bash deploy/amplify/pre.sh
         build:
           commands:
-            - bash /deploy/amplify/build.sh
+            - bash deploy/amplify/build.sh
         postBuild:
           commands:
-            - bash /deploy/amplify/post.sh
+            - bash deploy/amplify/post.sh
       artifacts:
         baseDirectory: public
         files:
