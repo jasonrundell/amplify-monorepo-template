@@ -6,6 +6,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - pwd
             - npm run amplify:pre
         build:
           commands:
