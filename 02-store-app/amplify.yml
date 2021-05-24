@@ -1,24 +1,18 @@
 version: 1
-
 applications:
-  - appRoot: 02-store-app
-    frontend:
+  - frontend:
       phases:
         preBuild:
           commands:
-            - npm run amplify:pre
+            - yarn install
         build:
           commands:
-            - npm run amplify:build
-        postBuild:
-          commands:
-            - npm run amplify:post
+            - yarn run build
       artifacts:
-        baseDirectory: public
+        baseDirectory: build
         files:
           - '**/*'
       cache:
         paths:
           - node_modules/**/*
-          - .cache/**/*
-          - public/static/**/*
+    appRoot: 02-store-app

@@ -1,3 +1,4 @@
+import { GlobalMainNavigation } from '../../shared/ui-components'
 import logo from './logo.svg'
 import './App.css'
 
@@ -5,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <GlobalMainNavigation />
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Welcome to the Public App</h1>
         <a
