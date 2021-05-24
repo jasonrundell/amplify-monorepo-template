@@ -16,3 +16,8 @@ yarn --version
 echo "Installing NPM packages for Public App..."
 yarn
 echo "Finished installing NPM packages for Public App."
+echo "Building Public App..."
+yarn run build
+echo "Finished building Public App."
+echo "'Remember, no matter where you go, there you are.'"
+echo "'Code never gets faster, it can only do fewer things.'"
