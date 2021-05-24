@@ -16,6 +16,9 @@ node -v
 echo "Installing NPM packages for Public App..."
 yarn install
 echo "Finished installing NPM packages for Public App."
+echo "Creating symlink to shared folder..."
+ln -s ../../shared shared
+echo "Finished creating symlink to shared folder..."
 echo "Building Public App..."
 yarn run build
 echo "Finished building Public App."
