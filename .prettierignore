@@ -1,0 +1,6 @@
+tests/performance
+node_modules
+public
+deploy
+data/graphql
+.cache
