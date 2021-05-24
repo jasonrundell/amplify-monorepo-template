@@ -1,7 +1,7 @@
 version: 1
 
 applications:
-  - appRoot: store-app
+  - appRoot: 02-store-app
     frontend:
       phases:
         preBuild:

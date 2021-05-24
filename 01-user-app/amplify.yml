@@ -1,7 +1,7 @@
 version: 1
 
 applications:
-  - appRoot: user-app
+  - appRoot: 01-user-app
     frontend:
       phases:
         preBuild:

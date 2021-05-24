@@ -1,7 +1,7 @@
 version: 1
 
 applications:
-  - appRoot: public-app
+  - appRoot: 00-public-app
     frontend:
       phases:
         preBuild:
