@@ -44,3 +44,5 @@ On new commit change, check which folder received updates and deploy only that f
 ## Tests and Automation
 
 Tests are run with Cypress across all packages under the `tests/` folder.
+
+<!-- 1 -->
