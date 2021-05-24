@@ -1,20 +1,20 @@
 import React from 'react'
-// import { root } from './index.module.scss'
+import { list, list__item } from './index.module.scss'
 const GlobalMainNavigation = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <a href="/en/">Home</a>
+      <ul className={list}>
+        <li className={list__item}>
+          <a href="/">Home</a>
         </li>
-        <li>
-          <a href="/en/store/">Store</a>
+        <li className={list__item}>
+          <a href="/store/">Store</a>
         </li>
-        <li>
-          <a href="/en/blog/">Blog</a>
+        <li className={list__item}>
+          <a href="/blog/">Blog</a>
         </li>
-        <li>
-          <a href="/en/login/">Login</a>
+        <li className={list__item}>
+          <a href="/login/">Login</a>
         </li>
       </ul>
     </nav>

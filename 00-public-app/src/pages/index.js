@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <GlobalMainNavigation />
-    <h1>Hi people</h1>
+    <h1>Public App</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage
@@ -23,8 +23,9 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      <Link to="/store/">Go to Store</Link> <br />
+      <Link to="/blog/">Go to Blog</Link><br />
+      <Link to="/login/">Login</Link>
     </p>
   </Layout>
 )
