@@ -6,7 +6,7 @@ applications:
       phases:
         build:
           commands:
-            - bash ./deploy/amplify/build.sh
+            - yarn run build
       artifacts:
         baseDirectory: ./public
         files:
